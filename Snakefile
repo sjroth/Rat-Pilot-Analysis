@@ -42,4 +42,4 @@ rule make_tag_directory:
     priority:
         1
     shell:
-        "makeTagDirectory tag_directories/{wildcards.sample} {input}"
+        "makeTagDirectory tag_directories/{wildcards.sample} {input} -single"
